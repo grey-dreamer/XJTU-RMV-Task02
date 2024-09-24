@@ -1,7 +1,7 @@
 # Task02:使用 C++ 和 OpenCV 进行图像处理
 ## 配置C++与OpenCV历程
 首先安装好gcc,g++等编译器，然后按任务书进行OpenCV的安装。然而，在`sudo apt install libopencv-dev`一步报错：<br>
-![报错截图重装时没保存，与这张网上的报错结构类似](../../assets/报错.png)<br>
+![报错截图重装时没保存，与这张网上的报错结构类似](../assets/报错.png)<br>
 向AI查询后，尝试其建议之一：手动安装OpenCV。参考这篇教程[Ubuntu 20.04搭建OpenCV 4.5.0 & C++环境](https://blog.csdn.net/weixin_44796670/article/details/115900538?spm=1001.2014.3001.5506)，并用文中方法测试，成功安装
 
 然而，在用cmake编译程序时，终端报错“无法找到图像文件”，然而图像文件路径无误且完好无损。我又写了一份helloworld，发现可以被cmake编译运行。结合vscode中报错“无法打开源文件"opencv2/opencv.hpp"”，认为安装的opencv有问题，于是寻求解决办法。
@@ -17,7 +17,7 @@
 重装后，安装gcc,g++,vscode和前两个依赖库，`sudo aptitude install libopencv-dev`，按教程对其中部分内容进行降级操作，成功安装，且用cmake成功编译运行OpenCV函数，环境配置到此结束。
 ## 主程序开发
 开发前跟AI要了一份简单程序，学习了图片的加载、展示与保存操作<br>
-![](../../assets/代码.png)<br>
+![](../assets/代码.png)<br>
 ### 参考教程
 大纲参考这篇文章：[基于C++ OpenCV的图像处理-基础篇](https://blog.csdn.net/Aden422413/article/details/137361030?spm=1001.2014.3001.5506)
 
@@ -28,7 +28,7 @@
 提取图片红色区域的HSV方法：参考这篇教程[图像处理-提取指定颜色](https://blog.csdn.net/xdg15294969271/article/details/121642176?ops_request_misc=&request_id=&biz_id=102&utm_term=%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87%E7%BA%A2%E8%89%B2%E9%A2%9C%E8%89%B2%E5%8C%BA%E5%9F%9F&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-121642176.142^v100^pc_search_result_base7&spm=1018.2226.3001.4187)完成<br>
 ### 其他操作
 具体的代码实现与每一步的原理通过查询AI得到，无报错。如下图为学习均值滤波操作时与AI的对话
-![](../../assets/均值滤波AI对话.png)
+![](../assets/均值滤波AI对话.png)
 
 ## 提交内容说明
 resource中按任务书顺序给各操作展示的图片编号，图片名也能反映对应的操作

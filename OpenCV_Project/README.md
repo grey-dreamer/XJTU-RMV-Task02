@@ -1,7 +1,7 @@
 # Task02:使用 C++ 和 OpenCV 进行图像处理
 ## 配置C++与OpenCV历程
-首先安装好gcc,g++等编译器，然后按任务书进行OpenCV的安装。然而，在`sudo apt install libopencv-dev`一步报错：<br>
-![报错截图重装时没保存，与这张网上的报错结构类似](../assets/报错.png)<br>
+首先安装好gcc,g++等编译器，然后按任务书进行OpenCV的安装。然而，在`sudo apt install libopencv-dev`一步报错(报错截图重装时没保存，与这张网上的报错结构类似)：<br>
+![](../assets/报错.png)<br>
 向AI查询后，尝试其建议之一：手动安装OpenCV。参考这篇教程[Ubuntu 20.04搭建OpenCV 4.5.0 & C++环境](https://blog.csdn.net/weixin_44796670/article/details/115900538?spm=1001.2014.3001.5506)，并用文中方法测试，成功安装
 
 然而，在用cmake编译程序时，终端报错“无法找到图像文件”，然而图像文件路径无误且完好无损。我又写了一份helloworld，发现可以被cmake编译运行。结合vscode中报错“无法打开源文件"opencv2/opencv.hpp"”，认为安装的opencv有问题，于是寻求解决办法。
@@ -31,4 +31,4 @@
 ![](../assets/均值滤波AI对话.png)
 
 ## 提交内容说明
-resource中按任务书顺序给各操作展示的图片编号，图片名也能反映对应的操作
+resource中按任务书顺序给各操作展示的图片编号，图片名也能反映对应的操作。assets中为README中插入的图片。终端输出截图中存放了打印轮廓信息时和其他操作的终端输出。
